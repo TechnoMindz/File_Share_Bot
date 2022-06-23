@@ -19,6 +19,21 @@
       "required": true,
       "value": "108962xxxxx"
     },
+    "START_MSG": {
+      "description": "Custom start message let owner decide",
+      "required": false,
+      "value": ""
+    },
+    "FORCE_MSG": {
+      "description": "Force Sub Msg if needed add By TechnoMindz",
+      "required": false,
+      "value": ""
+    },
+    "CUSTOM_CAPTION": {
+      "description": "Your Own Caption For Files don't leave it empty!",
+      "required": true,
+      "value": "All New Movies Available Only @TechnoMoviesCollection"
+    },
     "APP_ID":{
       "description": "your app id, take it from my.telegram.org",
       "required": true,
