@@ -2,7 +2,7 @@
 
 
 
-<p align="center"><a href="https://t.me/technomindzchat"><img src="https://telegra.ph/file/3845872c5f6d2eee0f53e.jpg" width="300"></a></p>
+<p align="center"><a href="https://t.me/technomindzchat"><video src="https://telegra.ph/file/b31408100f5e429bee76b.mp4" width="300"></a></p>
 
 ## Introduction
 
@@ -20,10 +20,14 @@
 ## IF YOU NEED ANY ASSISTANCE FEEL FREE TO CONTACT
 ## [SUPPORT_GROUP](https://t.me/technomindzchat)
 ## Contact [OWNER](https://t.me/technomindzyt)
-My GitHub Profile [RAVINANDAN](https://github.com/TechnoMindz)
+My GitHub Profile [RAVINANDAN](https://github.com/RaviTechnoMindz)
 ## DEPLOY
 
-<a href="https://heroku.com/deploy?template=https://github.com/TechnoMindz/TMFileShare">
+## ⚠️Fork The Repo And Deploy Or Unwanted Problems May Occur...
+## After Forking Before Deplying Change The link of your github HERE Below Shown In The Picture 👇👇👇
+<p align="center"><a href="https://t.me/technomindzchat"><img src="https://telegra.ph/file/7dfbf86b1da43cc40208f.jpg" width="800"></a></p>
+
+<a href="https://heroku.com/deploy?template=https://github.com/TechnoMindz/File_Share_Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
@@ -48,17 +52,9 @@ My GitHub Profile [RAVINANDAN](https://github.com/TechnoMindz)
 ```
 ## CUSTOM FILE CAPTION
 ```
-🔥💫  𝙁𝙞𝙧𝙨𝙩 𝙊𝙣 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢  🔥💫
-𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚𝙨 𝙃𝙚𝙧𝙚 𝙖𝙣𝙙 𝙂𝙚𝙩 𝙄𝙣 1 𝙈𝙞𝙣𝙪𝙩𝙚 100℅👇
-https://t.me/technomoviescollection
-
-🤭 𝗔𝗟𝗟 𝗠𝗢𝗩𝗜𝗘𝗦 𝗛𝗘𝗥𝗘 🥱
-
-<a href="https://t.me/tmmainchannel">1☞𝙅𝙤𝙞𝙣 𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡 𝘾𝙝𝙖𝙣𝙣𝙚𝙡</a>
-
-<a href="https://t.me/technomoviescollection">2☞ 𝙅𝙤𝙞𝙣 𝙈𝙤𝙫𝙞𝙚𝙨 𝙂𝙧𝙤𝙪𝙥</a>
-
-<a href="https://t.me/technomindzchat">3☞ 𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙂𝙧𝙤𝙪𝙥</a>
+<code>{file_name}</code>
+All Movies Available
+Join @TmMainChannel
 
 ```
 ## CREATED BY
