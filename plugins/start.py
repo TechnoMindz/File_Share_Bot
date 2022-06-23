@@ -60,7 +60,7 @@ async def start_command(client: Client, message: Message):
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Something went wrong😵‍💫..!")
+            await message.reply_text("Something went wrong 😵‍💫..!")
             return
         await temp_msg.delete()
 
@@ -184,7 +184,9 @@ Total Users: <code>{total}</code>
 Successful: <code>{successful}</code>
 Blocked Users: <code>{blocked}</code>
 Deleted Accounts: <code>{deleted}</code>
-Unsuccessful: <code>{unsuccessful}</code></b>"""
+Unsuccessful: <code>{unsuccessful}</code></b>
+
+@TmMainChannel"""
         
         return await pls_wait.edit(status)
 
