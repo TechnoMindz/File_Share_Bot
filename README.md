@@ -27,10 +27,15 @@ My GitHub Profile [RAVINANDAN](https://github.com/RaviTechnoMindz)
 ## After Forking Before Deplying Change The link of your github HERE Below Shown In The Picture 👇👇👇
 <p align="center"><a href="https://t.me/technomindzchat"><img src="https://telegra.ph/file/7dfbf86b1da43cc40208f.jpg" width="800"></a></p>
 
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>  
 <a href="https://heroku.com/deploy?template=https://github.com/TechnoMindz/File_Share_Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
-
+</p>
+</details>
+  
 ### ꜱᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇꜱ🎑
 
 <a href="https://t.me/tmmainchannel"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
