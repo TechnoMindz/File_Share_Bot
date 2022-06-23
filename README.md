@@ -2,7 +2,7 @@
 
 
 
-<p align="center"><a href="https://t.me/technomindzchat"><video src="https://telegra.ph/file/b31408100f5e429bee76b.mp4" width="300"></a></p>
+<p align="center"><a href="https://t.me/technomindzchat"><img src="https://telegra.ph/file/b417bdd01331179d5787c.jpg" width="300"></a></p>
 
 ## Introduction
 
