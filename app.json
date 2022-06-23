@@ -1,0 +1,67 @@
+{
+  "name": "TECHNO MINDZ File Sharing Bot",
+  "description": "file sharing bot store posts and it can access by special links",
+  "logo": "https://telegra.ph/file/a2a1dac049b50dc7f8dfb.jpg",
+  "keywords": [
+    "telegram",
+    "file",
+    "sharing"
+  ],
+  "repository": "https://github.com/TechnoMindz/TMFileShare",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your Bot token, Get it from @Botfather",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "An integer of consisting of your owner ID",
+      "required": true,
+      "value": "1089622824"
+    },
+    "APP_ID":{
+      "description": "your app id, take it from my.telegram.org",
+      "required": true,
+      "value": "8495910"
+    },
+    "API_HASH":{
+      "description": "your api hash, take it from my.telegram.org",
+      "required": true,
+      "value": "72a04a96bb1eb81fd9c8e80b5c6eb779"
+    },
+    "CHANNEL_ID":{
+      "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
+      "required": true,
+      "value": "-100xxxxxxxxxx"
+    },
+    "FORCE_SUB_CHANNEL":{
+      "description": "id of the channel or group, if you want enable force sub feature otherwise put 0 for disable",
+      "required": true,
+      "value": "-100xxxxxxxxxx"
+    },
+    "ADMINS": {
+      "description": "Admins id they can only create links, otherwise leave blank",
+      "required": true,
+      "value": "1089622824"
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
