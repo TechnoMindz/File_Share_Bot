@@ -7,7 +7,7 @@
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/TechnoMindz/TMFileShare",
+  "repository": "https://github.com/TechnoMindz/File_Share_Bot",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
@@ -17,17 +17,17 @@
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
       "required": true,
-      "value": "1089622824"
+      "value": "108962xxxxx"
     },
     "APP_ID":{
       "description": "your app id, take it from my.telegram.org",
       "required": true,
-      "value": "8495910"
+      "value": "849xxxxx"
     },
     "API_HASH":{
       "description": "your api hash, take it from my.telegram.org",
       "required": true,
-      "value": "72a04a96bb1eb81fd9c8e80b5c6eb779"
+      "value": "72a04a96bb1eb8xxxxxx9"
     },
     "CHANNEL_ID":{
       "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
@@ -42,7 +42,7 @@
     "ADMINS": {
       "description": "Admins id they can only create links, otherwise leave blank",
       "required": true,
-      "value": "1089622824"
+      "value": "108962xxxx"
     }
   },
   "addons": [
