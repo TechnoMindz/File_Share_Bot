@@ -22,12 +22,12 @@
     "START_MSG": {
       "description": "Custom start message let owner decide",
       "required": false,
-      "value": ""
+      "value": "𝗛𝗲𝗹𝗹𝗼 {first}\n\n𝗜 𝗖𝗮𝗻 𝗦𝘁𝗼𝗿𝗲 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗙𝗶𝗹𝗲𝘀 𝗶𝗻 𝗦𝗽𝗲𝗰𝗳𝗶𝗲𝗱 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗔𝗻𝗱 𝗢𝘁𝗵𝗲𝗿 𝗨𝘀𝗲𝗿𝘀 𝗖𝗮𝗻 𝗔𝗰𝗲𝘀𝘀 𝗜𝘁 𝗙𝗿𝗼𝗺 𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗟𝗶𝗻𝗸\nAny Queries Ask Here @TechnoMindzChat\n\n𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 @TMMAINCHANNEL"
     },
     "FORCE_MSG": {
       "description": "Force Sub Msg if needed add By TechnoMindz",
       "required": false,
-      "value": ""
+      "value": "𝗛𝗲𝗹𝗹𝗼 {first}\n\n𝗬𝗼𝘂 𝗡𝗲𝗲𝗱 𝗧𝗼 𝗝𝗼𝗶𝗻 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲\n\n𝗞𝗶𝗻𝗱𝗹𝘆 𝗣𝗹𝗲𝗮𝘀𝗲 𝗝𝗼𝗶𝗻 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹"
     },
     "CUSTOM_CAPTION": {
       "description": "Your Own Caption For Files don't leave it empty!",
