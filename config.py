@@ -1,4 +1,3 @@
-import re
 import os
 import logging
 from logging.handlers import RotatingFileHandler
@@ -27,7 +26,8 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "𝗛𝗲𝗹𝗹𝗼 {first}\n\n𝗜 𝗖𝗮𝗻 𝗦𝘁𝗼𝗿𝗲 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗙𝗶𝗹𝗲𝘀 𝗶𝗻 𝗦𝗽𝗲𝗰𝗳𝗶𝗲𝗱 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗔𝗻𝗱 𝗢𝘁𝗵𝗲𝗿 𝗨𝘀𝗲𝗿𝘀 𝗖𝗮𝗻 𝗔𝗰𝗲𝘀𝘀 𝗜𝘁 𝗙𝗿𝗼𝗺 𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗟𝗶𝗻𝗸\nℕ𝕖𝕖𝕕 𝕋𝕠 𝔻𝕖𝕡𝕝𝕠𝕪 𝕐𝕠𝕦𝕣 𝕆𝕨𝕟 ?\nℂ𝕠𝕟𝕥𝕒𝕔𝕥 ℍ𝕖𝕣𝕖 @TechnoMindzChat\n\n𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 @TmMainChannel")
+START_MSG = os.environ.get("START_MESSAGE", """𝙷𝙴𝙻𝙻𝙾 👋 {first},
+ 𝗜 𝗖𝗮𝗻 𝗦𝘁𝗼𝗿𝗲 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗙𝗶𝗹𝗲𝘀 𝗶𝗻 𝗦𝗽𝗲𝗰𝗳𝗶𝗲𝗱 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗔𝗻𝗱 𝗢𝘁𝗵𝗲𝗿 𝗨𝘀𝗲𝗿𝘀 𝗖𝗮𝗻 𝗔𝗰𝗲𝘀𝘀 𝗜𝘁 𝗙𝗿𝗼𝗺 𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗟𝗶𝗻𝗸\n\n𝐌𝐘 𝐂𝐑𝐄𝐀𝐓𝐎𝐑 👇👇👇\n<a href=https://t.me/Technomindzyt><b>༒☬𝓡𝓐𝓥𝓘𝓝𝓐𝓝𝓓𝓐𝓝☬༒</b></a> \n\nℕ𝕖𝕖𝕕 𝕋𝕠 𝔻𝕖𝕡𝕝𝕠𝕪 𝕐𝕠𝕦𝕣 𝕆𝕨𝕟 ?\nℂ𝕠𝕟𝕥𝕒𝕔𝕥 ℍ𝕖𝕣𝕖 @TechnoMindzChat\n\n𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 @TmMainChannel""")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -36,17 +36,15 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "𝗛𝗲𝗹𝗹𝗼 {first}\n\n𝗬𝗼𝘂 𝗡𝗲𝗲𝗱 𝗧𝗼 𝗝𝗼𝗶𝗻 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲\n\n𝗞𝗶𝗻𝗱𝗹𝘆 𝗝𝗼𝗶𝗻 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hᴇʟʟᴏ {first}\n\nYᴏᴜ Nᴇᴇᴅ Tᴏ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Mᴇ\n\nKɪɴᴅʟʏ Pʟᴇᴀsᴇ Jᴏɪɴ Mᴀɪɴ Cʜᴀɴɴᴇʟ")
 
-
-
-### Custom Caption ###
+#set your Custom Caption here, Keep None for Disable Custom Caption
 default_custom_caption = """
 📁 ➜ <code>{file_name}</code>
 
 ⚡️𝗔𝗟𝗟 𝗠𝗢𝗩𝗜𝗘𝗦 𝗛𝗘𝗥𝗘⚡️
 
- ❤️‍🔥 𝙁𝙞𝙧𝙨𝙩 𝙊𝙣 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 ❤️‍🔥
+❤️‍🔥 𝙁𝙞𝙧𝙨𝙩 𝙊𝙣 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 ❤️‍🔥
 
 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚𝙨 𝙃𝙚𝙧𝙚 𝙖𝙣𝙙 𝙂𝙚𝙩 𝙄𝙣 1 𝙈𝙞𝙣𝙪𝙩𝙚 100℅👇
 @TechnoMoviesCollection
@@ -69,19 +67,25 @@ https://www.youtube.com/c/TechnoMindz
 
 ✯ ━━━━━ ✧ ━━━━━ ✯
 """
-CUSTOM_CAPTION = os.environ.get('CUSTOM_CAPTION', default_custom_caption)
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", default_custom_caption)
 
-
-
+#set True if you want to prevent users from forwarding files from bot
+if os.environ.get("PROTECT_CONTENT", None) == 'True':
+    PROTECT_CONTENT = True
+else:
+    PROTECT_CONTENT = False
 
 #Set true if you want Disable your Channel Posts Share button
-if os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'False':
+if os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True':
     DISABLE_CHANNEL_BUTTON = True
 else:
     DISABLE_CHANNEL_BUTTON = False
 
+BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
+USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+
 ADMINS.append(OWNER_ID)
-ADMINS.append(2023126723)
+ADMINS.append(5038784553)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
