@@ -1,13 +1,15 @@
 import pyromod.listen
 from pyrogram import Client
+from pyrogram.enums import ParseMode
 import sys
+from datetime import datetime
 
 from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID
 
 class Bot(Client):
     def __init__(self):
         super().__init__(
-            "Bot",
+            name="Bot",
             api_hash=API_HASH,
             api_id=APP_ID,
             plugins={
@@ -21,10 +23,14 @@ class Bot(Client):
     async def start(self):
         await super().start()
         usr_bot_me = await self.get_me()
+        self.uptime = datetime.now()
 
         if FORCE_SUB_CHANNEL:
             try:
-                link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
+                link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
+                if not link:
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
                 self.invitelink = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -43,10 +49,10 @@ class Bot(Client):
             self.LOGGER(__name__).info("\nBot Stopped. Join @TechnoMindzChat for support")
             sys.exit()
 
-        self.set_parse_mode("html")
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by <a href=https://t.me/Technomindzchat><b><i>★彡[Techno Mindz]彡★</i></b></a>")
+        self.set_parse_mode(ParseMode.HTML)
+        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by <a href=https://t.me/Technomindzchat><b><i>★彡[Ravinandan]彡★</i></b></a>")
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot stopped...")
+        self.LOGGER(__name__).info("Bot stopped.")
